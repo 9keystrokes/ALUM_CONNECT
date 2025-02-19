@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer className="bg-gray-800">
+  <footer className="bg-gray-700">
     <div className="w-full py-12 px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
@@ -28,7 +28,7 @@ const Footer = () => (
           <h3 className="text-white text-lg font-semibold mb-4">Follow Us</h3>
           <div className="flex space-x-4">
             <a href="#" className="text-gray-300 hover:text-white">Facebook</a>
-            <a href="#" className="text-gray-300 hover:text-white">Twitter</a>
+            <a href="#" className="text-gray-300 hover:text-white">x</a>
             <a href="#" className="text-gray-300 hover:text-white">LinkedIn</a>
           </div>
         </div>
