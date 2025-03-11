@@ -1,7 +1,7 @@
 # Alum Connect
 This is a repository that has been developed locally in the past.
 
-Live Link/IP :- http://3.109.157.117:5173/login
+Live Link/IP :- http://3.109.157.117:5173/
 
 
 Some Screenshots to how the website looks nowadays...
