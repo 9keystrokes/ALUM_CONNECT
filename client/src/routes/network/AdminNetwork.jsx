@@ -3,12 +3,13 @@ import React, { useState, useEffect } from 'react';
 import Layout from '../../components/common/Layout';
 import axios from 'axios';
 import { CheckCircle2, XCircle, Trash2 } from 'lucide-react';
+import { useSidebarLayout } from '../../hooks/useSidebarLayout';
 
 const AdminNetwork = () => {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-
+  useSidebarLayout(true);
   // Fetch all jobs from the admin endpoint
   useEffect(() => {
     const fetchJobs = async () => {
@@ -83,7 +84,7 @@ const AdminNetwork = () => {
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">All Job Opportunities</h1>
+          
           <span className="text-gray-500 text-sm">
             {jobs.length} {jobs.length === 1 ? 'job' : 'jobs'} found
           </span>

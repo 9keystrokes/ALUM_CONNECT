@@ -2,13 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../components/common/Layout';
 import axios from 'axios';
+import { useSidebarLayout } from '../hooks/useSidebarLayout'; 
 
 const AdminProfile = () => {
   const [alumni, setAlumni] = useState([]);
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-
+  useSidebarLayout(true);
   // Fetch all users from /api/users
   const fetchUsers = async () => {
     try {
@@ -69,10 +70,6 @@ const AdminProfile = () => {
   return (
     <Layout>
       <div className="max-w-7xl mx-auto px-4 py-8 space-y-12">
-        {/* Page Header */}
-        <h1 className="text-3xl font-bold text-gray-900 text-center mb-8">
-          Admin Profile Dashboard
-        </h1>
 
         {/* Alumni Section */}
         <section>

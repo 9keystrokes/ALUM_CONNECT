@@ -8,6 +8,7 @@ import PostList from "../components/forum/PostList";
 import ErrorMessage from "../components/common/ErrorMessage";
 import SearchBar from "../components/forum/SearchBar";
 import { useNavigate } from "react-router-dom";
+import { useSidebarLayout } from '../hooks/useSidebarLayout'; 
 
 // 1) Import your toast from the custom Toast file
 import { toast } from "../components/Toast"; // ensure you have "export const toast" in Toast.jsx
@@ -25,6 +26,7 @@ const AdminDiscussion = () => {
   const [postIdToDelete, setPostIdToDelete] = useState(null);
 
   const navigate = useNavigate();
+  useSidebarLayout(true);
 
   // Fetch the logged-in user profile
   useEffect(() => {
@@ -155,10 +157,7 @@ const AdminDiscussion = () => {
         <Sidebar />
         <main className="flex-1 ml-64 overflow-auto h-full">
           <div className="p-8 max-w-5xl mx-auto">
-            <header className="mb-8">
-              <h1 className="text-3xl font-bold text-gray-800">Admin Discussion Dashboard</h1>
-              <p className="text-gray-600 mt-2">Manage and moderate the discussions.</p>
-            </header>
+            
 
             {/* Search Component */}
             <div className="mb-6">
