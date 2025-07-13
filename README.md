@@ -1,114 +1,130 @@
-# Alum Connect
+# AlumConnect
 
-🌐 Live Demo : Check out the live version of Alum Connect:
+[![Smart India Hackathon 2024](https://img.shields.io/badge/SIH-2024-blue)](https://www.sih.gov.in/)
+[![IIIT Nagpur](https://img.shields.io/badge/IIIT-Nagpur-red)](https://iiitn.ac.in/)
 
-- [http://bit.ly/Alum-Connect](http://bit.ly/Alum-Connect)
-- [http://15.206.215.46/](http://15.206.215.46/)
+## 🌐 Live Demo
+Visit our platform at: [AlumConnect](https://bit.ly/Alum-Connect)
 
-![Alumni Network Platform](https://github.com/9keystrokes/Alum_Connect_NEW/raw/main/website%20screenshots/Screenshot%202025-03-11%20043945.png)
+> **Note:** The platform offers visitor access with limited features. Full access requires IIITN email authentication.
 
-## 📌 Overview
+## 📜 About
+AlumConnect is a comprehensive alumni networking platform developed by Team DevNexus for Smart India Hackathon 2024 (PS1609). As undergraduate developers at IIIT Nagpur, we've created a secure and exclusive platform that bridges the gap between past and present students, fostering professional and social relationships while bringing alumni engagement under institutional control.
 
-Alum Connect is a comprehensive alumni networking platform designed to foster connections between current students and alumni. The platform facilitates mentorship opportunities, career guidance, and community building among graduates and current students.
+### 🎓 Project Context
+- **Event:** Smart India Hackathon 2024 (PS1609)
+- **Team:** DevNexus
+- **Institution:** IIIT Nagpur
+- **Status:** Fully functional, hosted on AWS EC2
 
-## 🚀 Features
+### 👥 Team & Mentorship
+- **Faculty Guide:** Dr. Khushboo Thakkar Jain (Head of Alumni Cell, IIIT Nagpur)
+- **Alumni Mentors:** 
+  - Mudit Gupta (Batch of 2022)
+  - Parth Wazurkar (Batch of 2020)
 
-- **User Authentication**: Secure login and registration system for students and alumni
-- **Profile Management**: Detailed profiles highlighting education, work experience, and skills
-- **Networking Tools**: Connect with alumni and students with similar interests or career paths
-- **Event Management**: Create, discover, and RSVP to alumni events and meetups
-- **Mentorship Program**: Request and offer mentorship opportunities
-- **Job Board**: Share and discover career opportunities within the alumni network
-- **Discussion Forums**: Engage in topic-based discussions with the community
+## 🎯 Goals
+- Establish a centralized portal for student-alumni interaction and collaboration
+- Foster long-term alumni involvement in:
+  - Mentorship
+  - Recruitment
+  - Entrepreneurship
+  - Institutional growth
+- Encourage student-led innovation through structured handovers and open contribution
 
-## 💻 Technology Stack
+## 🔒 Security & Access
+- OAuth login restricted to IIITN-verified email addresses
+- Secure session-based authentication
+- Real-time WebSocket-based messaging
+- Role-based access control
+- Institutional-grade security measures
 
-- **Frontend**: React.js, HTML5, CSS3, JavaScript (ES6+)
-- **State Management**: Redux
-- **UI Framework**: Material-UI
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
-- **API**: RESTful API design
-- **Deployment**: Heroku/AWS/Netlify
+## ✨ Platform Features
 
-## 📷 Screenshots
+### 1. Announcements Hub
+![Announcements](website%20screenshots/Screenshot%202025-03-11%20044017.png)
+Dynamic space for latest announcements, college events, and alumni achievements.
 
-<div align="center">
-  <img src="https://github.com/9keystrokes/Alum_Connect_NEW/raw/main/website%20screenshots/Screenshot%202025-03-11%20044001.png" alt="Login Page" width="700"/>
-  <p><em>Login Page</em></p>
-  
-  <img src="https://github.com/9keystrokes/Alum_Connect_NEW/raw/main/website%20screenshots/Screenshot%202025-03-11%20044017.png" alt="Dashboard" width="700"/>
-  <p><em>User Dashboard</em></p>
-  
-  <img src="https://github.com/9keystrokes/Alum_Connect_NEW/raw/main/website%20screenshots/Screenshot%202025-03-11%20044045.png" alt="Profile Page" width="700"/>
-  <p><em>Profile Management</em></p>
-  
-  <img src="https://github.com/9keystrokes/Alum_Connect_NEW/raw/main/website%20screenshots/Screenshot%202025-03-11%20044024.png" alt="Alumni Directory & Job Board" width="700"/>
-  <p><em>Alumni Directory & Job Board</em></p>
-  
-  <img src="https://github.com/9keystrokes/Alum_Connect_NEW/raw/main/website%20screenshots/Screenshot%202025-03-11%20044031.png" alt="Discussion Page" width="700"/>
-  <p><em>Discussion Forum</em></p>
-  
-  <img src="https://github.com/9keystrokes/Alum_Connect_NEW/raw/main/website%20screenshots/Screenshot%202025-03-11%20044038.png" alt="Mentorship" width="700"/>
-  <p><em>Mentorship Program</em></p>
-  
-</div>
+### 2. Alumni Directory and Career Board
+![Networking](website%20screenshots/Screenshot%202025-03-11%20044024.png)
+A unified platform enabling strong networking and career support between alumni and students through:
 
-## 🔧 Installation & Setup
+#### 🔍 Search & Connect
+- Filterable alumni directory by:
+  - Branch  
+  - Batch  
+  - Location  
+  - Name search  
 
-```bash
-# Clone the repository
-git clone https://github.com/9keystrokes/Alum_Connect_NEW.git
+#### 💼 Career Opportunities
+- Job postings  
+- Internship opportunities  
+- Mentorship programs  
+- Alumni-driven career guidance  
 
-# Navigate to the project directory
-cd Alum_Connect_NEW
 
-# Install dependencies
-npm install
+### 4. Discussion Forum
+![Discussion](website%20screenshots/Screenshot%202025-03-11%20044031.png)
+Moderated space for:
+- Idea sharing
+- Q&A sessions
+- Internship guidance
+- Placement insights
+- Company-specific discussions
 
-# Start the development server
-npm start
-```
+### 5. Donations & Support
+![Donations](website%20screenshots/Screenshot%202025-03-11%20044038.png)
+Platform for raising funds for:
+- College initiatives
+- Alumni-supported causes
+- Institutional development
 
-## 🔐 Environment Variables
+### 6. User Profiles
+![Profiling](website%20screenshots/Screenshot%202025-03-11%20044045.png)
+Detailed user profiles with:
+- Professional information
+- Social media links
+- LinkedIn integration
+- GitHub profiles
+- Personal websites
 
-Create a `.env` file in the root directory with the following variables:
+### 7. Activity Centre
+![Activity Centre](website%20screenshots/activity-centre.png)
+Track:
+- Job applications
+- Platform engagement
+- User involvement
+- Interaction history
 
-```
-PORT=3000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-```
+### 8. Admin Dashboard
+Comprehensive administrative tools including:
+- Role-based access management
+- Announcement controls
+- Donation management
+- Career post moderation
+- Engagement analytics
+- User management
 
-## 📊 Project Structure
+## 💬 Real-time Communication
+- WebSocket-based messaging system
+- Instant notifications
+- Real-time updates
+- Secure message delivery
 
-```
-Alum_Connect_NEW/
-├── client/           # React frontend
-│   ├── public/       # Static files
-│   └── src/          # Source files
-├── server/           # Node.js backend
-│   ├── controllers/  # Request handlers
-│   ├── models/       # Database models
-│   ├── routes/       # API routes
-│   └── middleware/   # Custom middleware
-├── config/           # Configuration files
-└── package.json      # Project dependencies
-```
+## 🚀 Technical Stack
+- **Frontend:** React, Material-UI, TailwindCSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** Session-based with Passport.js
+- **Real-time:** Socket.IO
+- **Hosting:** AWS EC2
+- **File Storage:** Cloudinary
 
-## 👥 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🤝 Contributing
+We welcome contributions from the IIITN community. Please contact the development team for contribution guidelines.
 
 ## 📞 Contact
+For institutional integration or support, please contact the IIITN Alumni Cell.
 
-Project Link: [https://github.com/9keystrokes/Alum_Connect_NEW](https://github.com/9keystrokes/Alum_Connect_NEW)
+---
+*Developed with ❤️ by Team DevNexus for IIIT Nagpur*
